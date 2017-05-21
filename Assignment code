@@ -1,0 +1,30 @@
+import java.util.*;
+public class MyClass {
+
+	public static void main(String s[]){
+		
+		System.out.println("Hello");//Opening text	
+		System.out.println("Please type in a number");
+		toString ts = new toString();
+		ts.intToString();
+	}
+}
+
+class toString{
+	
+	Scanner sc = new Scanner(System.in);
+	
+	void intToString(){
+		
+		
+		int userNumber;//variables
+		String userNumberInString; 
+		userNumber = sc.nextInt();//takes user input as an integer
+	
+			userNumberInString = Integer.toString(userNumber);//converts the integer into string
+			System.out.println("You have just given us the number " + userNumberInString);//print the string
+		
+		
+	}
+	
+}
